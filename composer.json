@@ -1,25 +1,25 @@
 {
-  "name": "pqrs/l5b-crud",
-  "description": "CRUD artisan command for rappasoft/laravel-5-boilerplate",
+  "name": "360col/l6b-crud",
+  "description": "CRUD artisan command for rappasoft/laravel-boilerplate",
   "license": "MIT",
-  "homepage": "https://github.com/pqrs/l5b-crud",
+  "homepage": "https://github.com/360col/l6b-crud",
   "authors": [
     {
-      "name": "Alvaro Piqueras",
-      "email": "alvaro@pqrs.es"
+      "name": "Ben Tran",
+      "email": "360col@bttran.com"
     }
   ],
   "minimum-stability": "stable",
   "require": {},
   "autoload": {
     "psr-4": {
-      "pqrs\\L5BCrud\\": "src/"
+      "360col\\L6BCrud\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "pqrs\\L5BCrud\\L5BCrudServiceProvider"
+        "360col\\L6BCrud\\L6BCrudServiceProvider"
       ]
     }
   }

@@ -1,10 +1,10 @@
 <?php
 
-namespace pqrs\L5BCrud;
+namespace 360col\L6BCrud;
 
 use Illuminate\Support\ServiceProvider;
 
-class L5BCrudServiceProvider extends ServiceProvider
+class L6BCrudServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -13,8 +13,8 @@ class L5BCrudServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-		$this->commands('pqrs\L5BCrud\Console\Commands\L5BCrud');
-		$this->commands('pqrs\L5BCrud\Console\Commands\L5BStub');
+		$this->commands('360col\L6BCrud\Console\Commands\L6BCrud');
+		$this->commands('360col\L6BCrud\Console\Commands\l6bStub');
     }
 
     /**

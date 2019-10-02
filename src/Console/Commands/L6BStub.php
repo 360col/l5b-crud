@@ -1,26 +1,26 @@
 <?php
 
-namespace pqrs\L5BCrud\Console\Commands;
+namespace 360col\L6BCrud\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
-class L5BStub extends GeneratorCommand
+class l6bStub extends GeneratorCommand
 {
 	/**
 	* The name and signature of the console command.
 	*
 	* @var string
 	*/
-	protected $name = 'l5b:stub';
+	protected $name = 'l6b:stub';
 
 	/**
 	* The console command description.
 	*
 	* @var string
 	*/
-	protected $description = 'Don\'t use this command. Run l5b:crud {name} instead';
+	protected $description = 'Don\'t use this command. Run l6b:crud {name} instead';
 
 	/**
 	* The type of class being generated.

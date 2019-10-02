@@ -1,20 +1,20 @@
 <?php
 
-namespace pqrs\L5BCrud\Console\Commands;
+namespace 360col\L6BCrud\Console\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 
 use Artisan;
 use Illuminate\Console\Command;
 
-class L5BCrud extends Command
+class L6BCrud extends Command
 {
     /**
     * The name and signature of the console command.
     *
     * @var string
     */
-    protected $signature = 'l5b:crud {name} {--m|migrate} {--f|field=title} {--frontend} {--force}';
+    protected $signature = 'l6b:crud {name} {--m|migrate} {--f|field=title} {--frontend} {--force}';
 
     /**
     * The console command description.
@@ -42,7 +42,7 @@ class L5BCrud extends Command
     public function handle()
     {
 
-        // Transform l5b:crud command parameter to singular lowercase
+        // Transform l6b:crud command parameter to singular lowercase
         $name = strtolower(snake_case(str_singular($this->argument('name'))));
 
         // Create Model "Name.php"
@@ -143,7 +143,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Model ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -160,7 +160,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Event ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -177,7 +177,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Listener ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -193,7 +193,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Attribute ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -217,7 +217,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Controller ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -235,7 +235,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Repository ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -250,7 +250,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Request ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -268,7 +268,7 @@ class L5BCrud extends Command
 
         // If no migration with name "*create_names_table.php" exists then create it
         if (!glob(database_path() . "/migrations/*create_" . str_plural($key) . "_table.php")) {
-            Artisan::call('l5b:stub', $stubParams);
+            Artisan::call('l6b:stub', $stubParams);
             $this->line('Migration ' . $stubParams['name'] . Artisan::output());
         } else {
             $this->line('A migration file for the table ' . str_plural($key) . " already exists!\n");
@@ -294,7 +294,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Routes ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -308,7 +308,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Breadcrumbs ' . $stubParams['name'] . Artisan::output());
 
         // Include breadcrumb file in backend.php
@@ -338,7 +338,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('View ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -358,7 +358,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Label ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -385,7 +385,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Controller ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -403,7 +403,7 @@ class L5BCrud extends Command
         ];
 
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Event ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -420,7 +420,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Listener ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -438,7 +438,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Repository ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -453,7 +453,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Request ' . $stubParams['name'] . Artisan::output());
     }
     protected function frontend_routes($key, $name, $stub)
@@ -469,7 +469,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Routes ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -488,7 +488,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('View ' . $stubParams['name'] . Artisan::output());
     }
 
@@ -508,7 +508,7 @@ class L5BCrud extends Command
             '--force'           => $this->hasOption('force') ? $this->option('force') : false,
         ];
 
-        Artisan::call('l5b:stub', $stubParams);
+        Artisan::call('l6b:stub', $stubParams);
         $this->line('Label ' . $stubParams['name'] . Artisan::output());
     }
 }

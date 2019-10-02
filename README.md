@@ -9,14 +9,14 @@ By default it does not overwrite any files that may exist with the pre-stablishe
 ## Requires
 
 - [Laravel 5](https://laravel.com)
-- [rappasoft/laravel-5-boilerplate](https://www.github.com/rappasoft/laravel-5-boilerplate/)
+- [rappasoft/laravel-boilerplate](https://www.github.com/rappasoft/laravel-boilerplate/)
 
-It has been tested with Laravel 5.7.
+It has been tested with Laravel 6.0.
 
 ## Install
 
 ```
-composer require pqrs/l5b-crud
+composer require 360col/l6b-crud
 ```
 
 ## Run
@@ -24,7 +24,7 @@ composer require pqrs/l5b-crud
 In your Laravel project root folder:
 
 ```
-php artisan l5b:crud example
+php artisan l6b:crud example
 ```
 
 Where _example_ is the name you want for your model (routes, views, controllers,...). I've tried to follow best naming practices and it uses plural or singular names and lower or uppercase where needed. You can also use camelCase or snake_case.
@@ -52,33 +52,33 @@ Note: out of the box, the table comes only with a _title_ text field, besides th
 You can create all the files and run the migration by running the command with the --migrate option:
 
 ```
-php artisan l5b:crud example --migrate
+php artisan l6b:crud example --migrate
 
 or
 
-php artisan l5b:crud example -m
+php artisan l6b:crud example -m
 ```
 
 You may also specify the name of the default text field 'title' to whatever other you prefer with the --field option:
 
 ```
-php artisan l5b:crud example --field=name
+php artisan l6b:crud example --field=name
 
 or
 
-php artisan l5b:crud example -f name
+php artisan l6b:crud example -f name
 ```
 
 You can also overwrite previously created files with the --force option.
 
 ```
-php artisan l5b:crud example --force
+php artisan l6b:crud example --force
 ```
 
 To generate the frontend files also, you should use the --frontend option.
 
 ```
-php artisan l5b:crud example --frontend
+php artisan l6b:crud example --frontend
 ```
 
 ## Include a menu item
@@ -284,6 +284,8 @@ If you add more fields to your datatable, you'll have to edit _show.blade.php_, 
 ## License
 
 This repository is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Copyright © 2019 Ben Tran<360col@bttran.com>
 
 Copyright © 2019 Alvaro Piqueras <alvaro@pqrs.es>
 
