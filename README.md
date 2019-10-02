@@ -297,4 +297,4 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 **Laravel** Copyright © 2019 Taylor Otwell
 
-**Laravel 5 Boilerplate** Copyright © 2019 Anthony Rappa <rappa819@gmail.com>
+**Laravel Boilerplate** Copyright © 2019 Anthony Rappa <rappa819@gmail.com>

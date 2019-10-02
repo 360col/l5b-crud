@@ -21,7 +21,7 @@ class L6BCrud extends Command
     *
     * @var string
     */
-    protected $description = 'Create a complete CRUD structure for Laravel 5 Boilerplate Backend';
+    protected $description = 'Create a complete CRUD structure for Laravel Boilerplate Backend';
 
     public $doforce;
     /**
