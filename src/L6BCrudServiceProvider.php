@@ -1,6 +1,6 @@
 <?php
 
-namespace 360col\L6BCrud;
+namespace bt360col\L6BCrud;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class L6BCrudServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-		$this->commands('360col\L6BCrud\Console\Commands\L6BCrud');
-		$this->commands('360col\L6BCrud\Console\Commands\l6bStub');
+		$this->commands('bt360col\L6BCrud\Console\Commands\L6BCrud');
+		$this->commands('bt360col\L6BCrud\Console\Commands\l6bStub');
     }
 
     /**

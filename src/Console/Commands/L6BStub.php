@@ -1,6 +1,6 @@
 <?php
 
-namespace 360col\L6BCrud\Console\Commands;
+namespace bt360col\L6BCrud\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;

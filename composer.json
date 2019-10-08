@@ -1,25 +1,25 @@
 {
-  "name": "360col/l6b-crud",
+  "name": "bt360col/l6b-crud",
   "description": "CRUD artisan command for rappasoft/laravel-boilerplate",
   "license": "MIT",
-  "homepage": "https://github.com/360col/l6b-crud",
+  "homepage": "https://github.com/bt360col/l6b-crud",
   "authors": [
     {
       "name": "Ben Tran",
-      "email": "360col@bttran.com"
+      "email": "bt360col@bttran.com"
     }
   ],
   "minimum-stability": "stable",
   "require": {},
   "autoload": {
     "psr-4": {
-      "360col\\L6BCrud\\": "src/"
+      "bt360col\\L6BCrud\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "360col\\L6BCrud\\L6BCrudServiceProvider"
+        "bt360col\\L6BCrud\\L6BCrudServiceProvider"
       ]
     }
   }

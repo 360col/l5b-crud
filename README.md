@@ -16,7 +16,7 @@ It has been tested with Laravel 6.0.
 ## Install
 
 ```
-composer require 360col/l6b-crud
+composer require bt360col/l6b-crud
 ```
 
 ## Run
@@ -285,7 +285,7 @@ If you add more fields to your datatable, you'll have to edit _show.blade.php_, 
 
 This repository is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-Copyright © 2019 Ben Tran<360col@bttran.com>
+Copyright © 2019 Ben Tran<bt360col@bttran.com>
 
 Copyright © 2019 Alvaro Piqueras <alvaro@pqrs.es>
 
