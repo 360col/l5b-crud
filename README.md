@@ -1,6 +1,6 @@
 # CRUD artisan command for rappasoft/laravel-5-boilerplate
 
-Creates a Model, Controller (with Repository, validation Requests, Events and Listeners), Migration, Routes, Breadcrumbs and CRUD Views for the given name ready to work in [rappasoft/laravel-5-boilerplate](https://www.github.com/rappasoft/laravel-5-boilerplate/) backend.
+Creates a Model, Controller (with Repository, validation Requests, Events and Listeners), Migration, Routes, Breadcrumbs and CRUD Views for the given name ready to work in [rappasoft/laravel-boilerplate](https://www.github.com/rappasoft/laravel-boilerplate/) backend.
 
 From version 1.4 you can also optionally generate frontend files: Controller, Labels, Event, Request, Listener, View, Route and Repository.
 
@@ -8,7 +8,7 @@ By default it does not overwrite any files that may exist with the pre-stablishe
 
 ## Requires
 
-- [Laravel 5](https://laravel.com)
+- [Laravel 6](https://laravel.com)
 - [rappasoft/laravel-boilerplate](https://www.github.com/rappasoft/laravel-boilerplate/)
 
 It has been tested with Laravel 6.0.
@@ -285,7 +285,7 @@ If you add more fields to your datatable, you'll have to edit _show.blade.php_, 
 
 This repository is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-Copyright © 2019 Ben Tran<bt360col@bttran.com>
+Copyright © 2019 Ben Tran <bt360col@bttran.com>
 
 Copyright © 2019 Alvaro Piqueras <alvaro@pqrs.es>
 
